@@ -1,0 +1,278 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+header {
+  background: #bbbbbb;
+  padding: 20px 0;
+}
+
+.menu {
+  position: relative;
+  width: 940px;
+  margin: 0 auto;
+}
+
+nav ul {
+  position: absolute;
+  top: 6.875rem;
+  right: 1.5rem;
+}
+
+nav li {
+  display: inline;
+  margin: 0 0 0 15px;
+}
+
+nav a {
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 22px;
+}
+
+nav a:hover {
+  color: #c78c19;
+  transition: 0.3s;
+  text-decoration: underline;
+}
+
+.products {
+  width: 940px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.products li {
+  display: inline-block;
+  text-align: center;
+  width: 30%;
+  vertical-align: top;
+  margin: 0 1.5%;
+  padding: 1.875rem 1.25rem;
+  box-sizing: border-box;
+  border: 2px #000000 solid;
+  border-radius: 12px;
+}
+
+.products li:hover {
+  border-color: #c78c19;
+  cursor: pointer;
+}
+
+.products li:hover h2 {
+  color: #c78c19;
+}
+
+.products li:active {
+  border-color: #088c19;
+}
+
+.products h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.product-description {
+  font-size: 18px;
+}
+
+.product-price {
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 0.625rem;
+}
+
+footer {
+  text-align: center;
+  background: url('bg.jpg');
+  padding: 40px 0;
+}
+
+.copyright {
+  color: #ffffff;
+  font-size: 13px;
+  margin-top: 20px;
+}
+
+/* contatos */
+
+#contact-content {
+  width: 940px;
+  margin: 0 auto;
+}
+
+form {
+  margin: 40px 0;
+}
+
+form label,
+form legend {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.input-default {
+  display: block;
+  margin-bottom: 20px;
+  padding: 10px 25px;
+  width: 40%;
+}
+
+.checkbox-email {
+  margin: 20px 0;
+}
+
+.send-form {
+  width: 20%;
+  padding: 10px 0;
+  background-color: orange;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  border: none;
+  border-radius: 5px;
+}
+
+.send-form:hover {
+  background-color: darkorange;
+  transition: 1s;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+table {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+thead {
+  background: #555555;
+  color: white;
+  font-weight: bold;
+}
+
+td,
+th {
+  border: 1px solid #000000;
+  padding: 8px 15px;
+}
+
+/* CSS DA PAGINA INICIAL */
+
+.banner {
+  width: 100%;
+}
+
+.main-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  clear: left;
+}
+
+.introduction {
+  padding: 3em 0;
+  background: #fffffe;
+  width: 940px;
+  margin: 0 auto;
+}
+
+.introduction p {
+  margin-bottom: 1rem;
+}
+
+.introduction strong {
+  font-weight: bold;
+}
+
+.introduction rem {
+  font-style: italic;
+}
+
+.utensilios-img {
+  width: 120px;
+  float: left;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.map {
+  padding: 3em 0;
+  background: linear-gradient(#fffffe, #888888);
+}
+
+.content-map {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.map p {
+  margin-bottom: 2em;
+  text-align: center;
+}
+
+.benefits {
+  padding: 3em 0;
+  background: #888888;
+}
+
+.content-benefits {
+  width: 640px;
+  margin: 2em auto;
+}
+
+.list-benefits {
+  width: 40%;
+  float: left;
+  list-style: initial;
+}
+
+.itens:first-child {
+  font-weight: bold;
+}
+
+.itens {
+  line-height: 1.5;
+}
+
+.img-benefits {
+  width: 60%;
+  box-shadow: 10px 10px 10px #000000;
+}
+
+.img-benefits:hover {
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+.video {
+  width: 500px;
+  margin: 2em auto;
+}
+
+@media screen and (max-width: 480px) {
+  .menu,
+  .introduction,
+  .map,
+  .content-benefits,
+  .content-map,
+  .video {
+    width: auto;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  nav ul {
+    position: static;
+  }
+
+  .list-benefits,
+  .img-benefits {
+    width: 100%;
+  }
+}
